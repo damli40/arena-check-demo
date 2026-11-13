@@ -3,7 +3,7 @@
 # GitHub's runner, and puts the result in the job summary and a downloadable report.
 #
 # STATUS: this workflow has never run on GitHub. Arena has no public GitHub home yet, so
-# damli40/arena@4ff167494e3bc2c04683e7f6dfdf5963079bb5ba below are placeholders: replace ARENA_OWNER with where Arena
+# damli40/arena@9679b61b36789fcd2cc3a4a8ba580cd86fafab4a below are placeholders: replace ARENA_OWNER with where Arena
 # lives and ARENA_COMMIT with a full 40-character commit SHA of Arena (a SHA, not a branch or tag,
 # so the code you run cannot change under you).
 #
@@ -88,7 +88,7 @@ jobs:
 
       - name: Arena check
         id: arena
-        uses: damli40/arena@4ff167494e3bc2c04683e7f6dfdf5963079bb5ba              # <- placeholders, see the top of this file
+        uses: damli40/arena@9679b61b36789fcd2cc3a4a8ba580cd86fafab4a              # <- placeholders, see the top of this file
         with:
           wasm: arena-input/guard.wasm
           # Only when you set GUARD_CONFIG / GUARD_MAPPING at the top of this file.
